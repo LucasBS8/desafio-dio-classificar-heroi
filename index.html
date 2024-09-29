@@ -3,17 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Classificação de heroi</title>
-    <style>
-        #classificationResult {
-            display: none;
-        }
-    </style>
 </head>
 <body>
     <h1>Classificador de herois</h1>
     <p>Digite a quantidade de seu XP (experiência):</p>
-
+<br>
     <form id="classificationForm" action="classification" method="post">
         <label for="name">Nome:</label>
         <input type="text" id="name" title="Digite seu nome" placeholder="Digite seu nome">
@@ -21,9 +17,9 @@
         <label for="xp">XP:</label>
         <input type="number" id="xp" title="Digite seu XP" placeholder="Digite seu XP">
         <br>
-        <input type="submit" value="Classificar">
+        <input class="btn" type="submit" value="Classificar">
     </form> 
-
+<br>
     <div id="classificationResult">
         <h2>Classificação</h2>
         <span>Nome: </span><p id="nameResult"></p>
